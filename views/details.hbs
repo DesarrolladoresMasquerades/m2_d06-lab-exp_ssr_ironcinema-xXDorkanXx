@@ -1,0 +1,22 @@
+<section class="detailPage">
+    <div class="imageBox">
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="detailBox">
+        <a href="http://localhost:3000/movies">Go back</a>
+        <h1>{{title}}</h1>
+        <h2>Director: {{director}}</h2>
+        <h3>Stars</h3>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        <p>
+            {{#each showtimes}}
+            <span>{{this}} |</span>
+            {{/each}}
+        </p>
+    </div>
+</section>
